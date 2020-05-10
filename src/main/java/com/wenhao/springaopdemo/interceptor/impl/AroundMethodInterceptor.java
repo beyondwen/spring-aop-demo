@@ -9,6 +9,7 @@ public class AroundMethodInterceptor implements MethodInterceptor {
     @Override
     public void invoke(MethodInvocation methodInvocation) throws InvocationTargetException, IllegalAccessException {
         System.out.println("环绕通知在目标方法之前执行");
+        //通过执行器 执行递归方法
         methodInvocation.process();
         System.out.println("环绕通知在目标方法之后执行");
     }

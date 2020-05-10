@@ -15,6 +15,7 @@ import java.util.List;
 public class Test001 {
 
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        //放入需要执行的切入类
         List<MethodInterceptor> list = new ArrayList<>();
         list.add(new BeforeMethodInterceptor());
         list.add(new AfterMethodInterceptor());
